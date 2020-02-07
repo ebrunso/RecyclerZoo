@@ -14,3 +14,21 @@ Compile all files, the first activity that will greet you is the Zoo Homepage, c
 ![Zoo Homepage](https://raw.githubusercontent.com/ebrunso/RecyclerZoo/master/Zoowelcome.png)
 
 ![Animal Classification](https://raw.githubusercontent.com/ebrunso/RecyclerZoo/master/ZooAnimalClassifification.png)
+
+1. What is the difference in recyclerView and listView?
+	**RecyclerView - Utilizes Lazy Loading, newer than Listview, requires a layout manager and an adapter. RecyclerView scrolls through items and only populates as the user scrolls the screen down. Loads +2 list members on the top and bottom of the screen.**
+	
+	**listView - original listView for android. Utilizes eager loading to load all list items at the same time, which can cause the app to time out. itemClickListener is implemented by default.**
+
+2. Define lazy loading.
+	**Lazy Loading will initialize values when value is first called upon, but not at program initialization.**
+
+
+3. What is an item decorator in RecyclerViews?
+	**An Item Decorator is used in RecyclerView to draw dividers between objects on the list. It is capable of drawing on all 4 sides of an item.**
+
+4. What is the View Holder Pattern?
+	**View Holder Pattern is a design pattern used in RecyclerView to help speed up rendering of the Listview. It does not need to perform a lookup for new objects added to the RecyclerView.**
+
+5. How do you implement a item touch helper for the RecyclerView?
+	**abstract class TouchHelper : ItemTouchHelper.Callback**
