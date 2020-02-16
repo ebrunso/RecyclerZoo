@@ -25,7 +25,7 @@ class Species : AppCompatActivity() {
         lvZooView.adapter = adapter
         lvZooView.setOnItemClickListener{ _, _, i, _ ->
             val selectedString = list[i]
-            val intent = Intent("MAKE>THE>INTENT") //Not a real intent
+            val intent = Intent(this, AnimalRecycle::class.java) //Not a real intent
             intent.putExtra("KEY", selectedString)
             startActivity(intent)
         }

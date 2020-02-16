@@ -28,23 +28,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/tvZooName"
-        app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="Zoo stock image"
-        android:src="@drawable/zoostockimage" />
+        android:gravity="center"
+        android:src="@drawable/zoostockimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvZooName"
+        app:srcCompat="@drawable/zoostockimage"
+        tools:srcCompat="@drawable/zoostockimage" />
 
     <Button
         android:id="@+id/btnZooEntry"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100sp"
         android:text="Enter The Zoo"
         android:layout_margin="0sp"
         android:gravity="center"
         android:background="@color/colorButton"
         android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivZooIcon" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

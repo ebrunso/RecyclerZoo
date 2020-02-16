@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val drawable: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.zoostockimage, null)
+    //val drawable: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.zoostockimage, null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
